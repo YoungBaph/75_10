@@ -1,0 +1,214 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar .navbar-toggler{
+    border: unset;
+
+    position: relative;
+    height: 10px;
+}
+
+.navbar-toggler-icon-custom{
+    width: 26px;
+    height: 2px;
+    display: inline-block;
+    background-color: #3a52bf;
+    position: absolute;
+    left: 0;
+}
+
+.navbar-toggler-icon-custom:first-child{
+    top: 0;
+}
+
+.navbar-toggler-icon-custom:last-child{
+    top: 100%;
+}
+
+.navbar-toggler:focus {
+    outline:0;
+}
+
+/* section-1 */
+
+.section-1{
+    background-image: url('../images/bg-01.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.section-1 .col{
+    margin-top: 16rem;
+    margin-bottom: 13rem;
+}
+
+.section .col .btn{
+    width: 200px;
+    text-transform: uppercase;
+    padding: 16px;
+    display: inline-block;
+    
+}
+
+.btn-blue{
+    background-color: #745cf9;
+    color: #fff;
+    border-radius: unset;
+    border: 2px solid #745cf9;
+
+}
+
+.btn-blue:hover{
+    background-color: #5d47d7;
+    color: #fff;
+    border: 2px solid #5d47d7;
+}
+
+.btn-white{
+    color: #fff;
+    border-radius: unset;
+    border: 2px solid #fff;
+}
+
+.btn-white:hover{
+    background-color: #fff;
+    color: #777;
+}
+
+.section-3{
+    background-color: #eee;
+}
+
+.section-4{
+    background-image: url('../images/bg-02.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 8rem;
+}
+.section-5{
+    background-color: #e1e1e1;
+}
+.section-6{
+    background-color: #0e1015;
+}
+
+.portfolio-item{
+    padding: unset;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item-bg{
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio-item-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,.5) 50%, 
+        rgba(0,0,0,1) 100%);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.portfolio-item:hover .portfolio-item-overlay{
+    opacity: 1;
+}
+
+.portfolio-item-title{
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    position: absolute;
+    transition: top .3s;
+}
+
+.portfolio-item:hover .portfolio-item-title{
+    top: 50%;
+}
+
+@media (max-width: 575px){
+    .portfolio-item-bg{
+        height: 22rem;
+    }
+}
+
+@media (min-width: 576px){
+    .portfolio-item-bg{
+        height: 16rem;
+    }
+}
+
+@media (min-width: 768px){
+    .portfolio-item-bg{
+        height: 16rem;
+    }
+}
+
+@media (min-width: 992px){
+    .portfolio-item-bg{
+        height: 20rem;
+    }
+}
+.section-7{
+    background-image: url('../images/bg-04.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 8rem;
+    
+}
+.section-7 .container .row .img{
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.logo{
+    margin: 25px 30px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    opacity: 1;
+}
+
+.section-9{
+    background-color: #e1e1e1;
+    padding: 90px 0 ;
+}
+
+.section-10{
+    background-color: #0e1015;
+
+}
+
+a,i{
+    color:white;
+    display: inline-block;
+}
+a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: #745cf9;
+    cursor: pointer;
+}
+i:visited, i:active, i:hover {
+    text-decoration: none;
+    color: #745cf9;
+    cursor: pointer;
+}
+button {
+    width: 200px;
+    height: 54px;
+}
+
